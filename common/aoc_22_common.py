@@ -5,7 +5,7 @@ def load_file(filename):
 
     input_file = open(filename)
     for (line) in input_file:
-        loaded.append(line.strip())
+        loaded.append(line.rstrip())
     input_file.close()
     return loaded
 
